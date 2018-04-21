@@ -1,0 +1,26 @@
+{
+  "name": "@jsantell/three-orbit-controls",
+  "version": "1.0.0",
+  "description": "Personal fork of THREE.OrbitControls",
+  "main": "./dist/three-orbit-controls.js",
+  "module": "./dist/three-orbit-controls.module.js",
+  "scripts": {
+    "build": "rollup -c",
+    "version": "npm run build && git add dist/*",
+    "postversion": "git push && git push --tags && npm publish"
+  },
+  "author": "Jordan Santell <jordan@jsantell.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.58.1"
+  },
+  "keywords": [
+    "three",
+    "three.js",
+    "orbitcontrols"
+  ],
+  "peerDependencies": {
+    "three": "*"
+  },
+  "repository": "https://github.com/jsantell/three-orbit-controls"
+}
